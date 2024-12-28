@@ -1,14 +1,20 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      
-      <body className="antialiased">
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+class Documents extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="icon" href="running-white.svg" type="image/x-icon" />
+          {/* <link rel="icon" href="running-black.svg" type="image/x-icon" /> */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default Documents;

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import EventsTable from "@/components/events-table";
+import LogoAnimation from "@/components/lottie/logo-animation"
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <main className="pt-20 px-4">
         {/* Hero Section */}
         <div className="container mx-auto text-center mt-20">
-          <h1 className="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
+        <LogoAnimation />
+          <h1 className="mt-5 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
             Your Gateway to Running Adventures in Malaysia
           </h1>
           <p className="text-lg mb-8 animate-pulse">

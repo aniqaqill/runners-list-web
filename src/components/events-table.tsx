@@ -62,6 +62,9 @@ export default function EventsTable({ events }: EventsTableProps) {
     return !isNaN(eventDate.getTime()) && eventDate < currentDate;
   };
 
+  // need to change whenever we update the data
+  const latestUpdateDate = "2025-01-04";
+
   return (
     <div className="mt-5 max-w-3xl overflow-hidden mx-auto">
       {/* Search and Filters Section */}
@@ -95,12 +98,12 @@ export default function EventsTable({ events }: EventsTableProps) {
             <option value="10">November</option>
             <option value="11">December</option>
           </select>
-            <select
+          <select
             value={selectedState}
             onChange={handleStateChange}
             className="w-full sm:w-1/4 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label="Filter by state"
-            >
+          >
             <option value="">All States</option>
             <option value="selangor">Selangor</option>
             <option value="penang">Penang</option>
@@ -118,7 +121,7 @@ export default function EventsTable({ events }: EventsTableProps) {
             <option value="kuala lumpur">Kuala Lumpur</option>
             <option value="putrajaya">Putrajaya</option>
             <option value="labuan">Labuan</option>
-            </select>
+          </select>
         </div>
       </div>
 
@@ -159,6 +162,9 @@ export default function EventsTable({ events }: EventsTableProps) {
           ))}
         </TableBody>
       </Table>
+      <div className="text-center mt-4 text-sm text-gray-500">
+        Latest update on {latestUpdateDate}
+      </div>
     </div>
   );
 }

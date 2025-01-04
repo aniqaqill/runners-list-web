@@ -1,10 +1,10 @@
-// filepath: /Users/aniqaqil.azrai/code/runners-list-web/src/pages/index.tsx
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import EventsTable from "@/components/events-table";
 import LogoAnimation from "@/components/lottie/logo-animation";
 import { loadEvents } from '@/utils/loadEvents';
+import DisclaimerModal from "@/components/disclaimer-modal"; 
 
 interface Event {
   name: string;
@@ -18,8 +18,26 @@ interface HomeProps {
 }
 
 export default function Home({ events }: HomeProps) {
+  const [isDisclaimerOpen, setIsDisclaimerOpen] = useState(false);
+
+  // Check if the user has already acknowledged the disclaimer
+  useEffect(() => {
+    const hasAcknowledged = localStorage.getItem("hasAcknowledgedDisclaimer");
+    if (!hasAcknowledged) {
+      setIsDisclaimerOpen(true);
+    }
+  }, []);
+
+  const handleCloseDisclaimer = () => {
+    setIsDisclaimerOpen(false);
+    localStorage.setItem("hasAcknowledgedDisclaimer", "true");
+  };
+
   return (
     <div>
+      {/* Disclaimer Modal */}
+      <DisclaimerModal isOpen={isDisclaimerOpen} onClose={handleCloseDisclaimer} />
+
       {/* Navbar */}
       <Navbar />
 

@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 98%; 
-  --foreground: #171717;
-  --border: 0 0% 20%; /* Dark border */
+  --background-light: #ffffff;
+  --background-dark: #000000;
+  --foreground-light: #000000;
+  --foreground-dark: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+}
+
+html.dark {
+  background-color: var(--background-dark);
+  color: var(--foreground-dark);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  background-color: hsl(var(--background));
+  background-color: inherit;
+  color: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  color: hsl(var(--foreground)); /* Ensure text is dark */
 }
-
 @layer base {
   :root {
     --background: 0 0% 100%; /* Light mode background */

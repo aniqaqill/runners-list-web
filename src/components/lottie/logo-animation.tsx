@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import animationDataWhite from '../../../data/running-white.json';
-import animationDataBlack from '../../../data/running-black.json';
+import animationDataWhite from '../../../data/lottie/running-white.json';
+import animationDataBlack from '../../../data/lottie/running-black.json';
 
 const LogoAnimation = () => {
   const { theme } = useTheme();

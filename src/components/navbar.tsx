@@ -25,8 +25,7 @@ export default function Navbar() {
         {/* Right Side: Theme Toggle and Submit Events Button */}
         <div className="flex items-center gap-4">
           {/* Submit Events Button */}
-          <Button variant="outline">Submit Events</Button>
-
+          <Button variant="outline">Feedback</Button>
           {/* Theme Toggle */}
           <ModeToggle />
         </div>

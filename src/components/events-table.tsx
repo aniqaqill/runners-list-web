@@ -134,7 +134,7 @@ export default function EventsTable({ events }: EventsTableProps) {
         </TableHeader>
         <TableBody>
           {filteredEvents.map((event: Event, index: number) => (
-            <TableRow key={index} className="border-b border-gray-200 hover:bg-gray-300">
+            <TableRow key={index} className="border-b border-gray-200 hover:bg-gray-400">
               <TableCell className="font-thin text-xs sm:text-sm md:text-base">
                 {event.name}
                 {isEventEnded(event.date) && (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import ModeToggle from "@/components/mode-toggle";
 import Image from "next/image";
 import logoWhite from "../../public/running-white.svg";
@@ -21,11 +21,10 @@ export default function Navbar() {
           />
           <span className="text-lg font-bold hidden sm:inline">Malaysia Runners List</span>
         </Link>
-
         {/* Right Side: Theme Toggle and Submit Events Button */}
         <div className="flex items-center gap-4">
           {/* Submit Events Button */}
-          <Button variant="outline">Feedback</Button>
+          {/* <Button variant="outline">Feedback</Button> */}
           {/* Theme Toggle */}
           <ModeToggle />
         </div>

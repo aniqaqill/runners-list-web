@@ -33,7 +33,7 @@ export default function Footer() {
                 <path d={SimpleIcons.siGithub.path} />
               </svg>
             </Link>
-            {/* <Link
+            <Link
               href="https://twitter.com/fmt_aniq"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Footer() {
               >
                 <path d={SimpleIcons.siGmail.path} />
               </svg>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

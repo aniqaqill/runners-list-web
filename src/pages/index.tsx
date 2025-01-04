@@ -29,7 +29,7 @@ export default function Home({ events }: HomeProps) {
         <div className="container mx-auto text-center mt-20">
           <LogoAnimation />
           <h1 className="mt-5 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
-            Your Gateway to Running Adventures in Malaysia
+            Your Gateway to Running Events in Malaysia
           </h1>
           <p className="text-lg mb-8 animate-pulse">
             Discover, Join, and Conquer the Best Running Events Across the Country

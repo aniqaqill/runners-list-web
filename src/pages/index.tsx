@@ -1,10 +1,23 @@
+// filepath: /Users/aniqaqil.azrai/code/runners-list-web/src/pages/index.tsx
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import EventsTable from "@/components/events-table";
-import LogoAnimation from "@/components/lottie/logo-animation"
+import LogoAnimation from "@/components/lottie/logo-animation";
+import { loadEvents } from '@/utils/loadEvents';
 
-export default function Home() {
+interface Event {
+  name: string;
+  location: string;
+  date: string;
+  registration_url: string;
+}
+
+interface HomeProps {
+  events: Event[];
+}
+
+export default function Home({ events }: HomeProps) {
   return (
     <div>
       {/* Navbar */}
@@ -14,7 +27,7 @@ export default function Home() {
       <main className="pt-20 px-4">
         {/* Hero Section */}
         <div className="container mx-auto text-center mt-20">
-        <LogoAnimation />
+          <LogoAnimation />
           <h1 className="mt-5 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
             Your Gateway to Running Adventures in Malaysia
           </h1>
@@ -28,10 +41,10 @@ export default function Home() {
 
         {/* Events Section */}
         <div className="container mx-auto mt-16 max-w-4xl">
-          <h2 id="list-events" className="text-2xl font-bold text-foreground mb-6">
+          <h2 id="list-events" className="text-2xl font-bold text-foreground mb-6 text-center">
             Upcoming Events
           </h2>
-          <EventsTable />
+          <EventsTable events={events} />
         </div>
 
         {/* Inspirational Quote */}
@@ -43,4 +56,13 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const events = loadEvents();
+  return {
+    props: {
+      events,
+    },
+  };
 }

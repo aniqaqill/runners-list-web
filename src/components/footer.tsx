@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/aniqaqill/runners-list"
+              href="https://github.com/aniqaqill"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"

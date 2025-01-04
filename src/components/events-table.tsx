@@ -135,14 +135,14 @@ export default function EventsTable({ events }: EventsTableProps) {
         <TableBody>
           {filteredEvents.map((event: Event, index: number) => (
             <TableRow key={index} className="border-b border-gray-200 hover:bg-gray-400">
-              <TableCell className="font-thin text-xs sm:text-sm md:text-base">
+              <TableCell className=" text-xs sm:text-sm md:text-base">
                 {event.name}
                 {isEventEnded(event.date) && (
                   <span className="ml-2 text-red-500 text-xs">(Ended)</span>
                 )}
               </TableCell>
-              <TableCell className="font-thin text-xs sm:text-sm md:text-base">{event.location}</TableCell>
-              <TableCell className="w-40 px-4 font-thin text-xs sm:text-sm md:text-base">{event.date}</TableCell>
+              <TableCell className=" text-xs sm:text-sm md:text-base">{event.location}</TableCell>
+              <TableCell className="w-40 px-4  text-xs sm:text-sm md:text-base">{event.date}</TableCell>
               <TableCell className="text-right text-xs sm:text-sm md:text-base">
                 <a
                   href={event.registration_url}

@@ -1,0 +1,1298 @@
+[
+    {
+        "name": "Kota Belud Half Marathon",
+        "location": "Kota Belud, Sabah",
+        "date": "2026-11-08",
+        "registration_url": "https://checkpointspot.asia/event/Kota-Belud-HM-26",
+        "state": "Sabah",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Selangor Marathon",
+        "location": "Persiaran Flora, Cyberjaya, Selangor",
+        "date": "2026-11-01",
+        "registration_url": "https://howei.com/registration/2072",
+        "state": "Selangor",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Malaysia Taman Negara Ultra",
+        "location": "Taman Negara Kuala Tahan, Jerantut, Pahang",
+        "date": "2026-10-24",
+        "registration_url": "https://checkpointspot.asia/event/Malaysia-Taman-Negara-Ultra-2026",
+        "state": "Pahang",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Kokol Ultra",
+        "location": "Padang Manggatal, Kota Kinabalu, Sabah",
+        "date": "2026-10-08",
+        "registration_url": "https://checkpointspot.asia/event/kokol-ultra26",
+        "state": "Sabah",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Kuala Lumpur Standard Chartered Marathon - 42KM & 21KM",
+        "location": "Kuala Lumpur",
+        "date": "2026-10-04",
+        "registration_url": "https://www.kl-marathon.com/",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Kuala Lumpur Standard Chartered Marathon - 10KM & 5KM",
+        "location": "Kuala Lumpur",
+        "date": "2026-10-03",
+        "registration_url": "https://www.kl-marathon.com/",
+        "state": "",
+        "distance": "5km",
+        "description": ""
+    },
+    {
+        "name": "Lipis Geopark Ultra",
+        "location": "Dataran Orang Kaya Haji, Kuala Lipis, Pahang",
+        "date": "2026-09-26",
+        "registration_url": "https://checkpointspot.asia/event/lipis-geopark-ultra-2026",
+        "state": "Pahang",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "5K Malaysia Speed",
+        "location": "KLCC, Kuala Lumpur",
+        "date": "2026-09-19",
+        "registration_url": "https://www.heyjom.com/event/5K-Malaysia-Speed",
+        "state": "Kuala Lumpur",
+        "distance": "5km",
+        "description": ""
+    },
+    {
+        "name": "Malaysia Sarong Music Run",
+        "location": "KLCC, Kuala Lumpur",
+        "date": "2026-09-19",
+        "registration_url": "https://www.heyjom.com/event/Malaysia-Sarong-Music-Run-2026",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Wasiyyah Larian Sawah Padi Tanjong Karang",
+        "location": "SK Sri Tiram, Kuala Selangor",
+        "date": "2026-09-06",
+        "registration_url": "https://www.heyjom.com/event/wasiyyah-larian-sawah-padi-tanjong-karang-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Wasiyyah Tanjong Karang Half Marathon",
+        "location": "SK Sri Tiram, Selangor",
+        "date": "2026-09-05",
+        "registration_url": "https://www.heyjom.com/event/wasiyyah-tanjong-karang-half-marathon-2026",
+        "state": "Selangor",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Borneo Trail Classic",
+        "location": "REDEEMS Centre, Bau, Sarawak",
+        "date": "2026-09-05",
+        "registration_url": "https://checkpointspot.asia/event/btc26",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Tunggul Melati Trail",
+        "location": "Jenderam Hilir, Sepang, Selangor",
+        "date": "2026-09-04",
+        "registration_url": "https://checkpointspot.asia/event/Tunggul-Melati-Trail2026",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Batu Gajah Half Marathon",
+        "location": "Silverlake Village Outlet, Batu Gajah",
+        "date": "2026-08-23",
+        "registration_url": "https://www.heyjom.com/event/batu-gajah-half-marathon-2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Tangkak Merdeka Half Marathon",
+        "location": "Dataran Tangkak, Johor",
+        "date": "2026-08-16",
+        "registration_url": "https://checkpointspot.asia/event/tangkak-merdeka-half-marathon-2026",
+        "state": "Johor",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Alor Setar Marathon",
+        "location": "Alor Setar, Kedah",
+        "date": "2026-08-14",
+        "registration_url": "https://howei.com/event_details/alorsetarmarathon2026",
+        "state": "Kedah",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Langkawi International Ultra Run",
+        "location": "Langkawi Island, Kedah",
+        "date": "2026-08-14",
+        "registration_url": "https://checkpointspot.asia/event/langkawi-international-ultra-run2026",
+        "state": "Kedah",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Cultural Night Run",
+        "location": "Jambatan Sultan Abdul Halim Mua'dzam Shah, Penang",
+        "date": "2026-08-08",
+        "registration_url": "https://checkpointspot.asia/event/Cultural-night-run26",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "IJM Allianz Duo Highway Challenge",
+        "location": "NPE highway -Sunway, Selangor",
+        "date": "2026-08-02",
+        "registration_url": "https://www.ijmhighwayrun.com/",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kadamaian Ultra",
+        "location": "Kota Belud, Sabah",
+        "date": "2026-07-24",
+        "registration_url": "https://checkpointspot.asia/event/Kadamaian-Ultra-2026",
+        "state": "Sabah",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "SCORE Marathon by AIA Vitality - 21km & 42km",
+        "location": "Putrajaya",
+        "date": "2026-07-19",
+        "registration_url": "https://www.heyjom.com/event/score-marathon-2026-by-aia-vitality",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Seremban Half Powered By JomRun",
+        "location": "Padang MPS",
+        "date": "2026-07-19",
+        "registration_url": "https://www.jomrun.com/event/Seremban-Half-2026-Powered-By-JomRun",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "SCORE Marathon by AIA Vitality - 5km & 10km",
+        "location": "Putrajaya",
+        "date": "2026-07-18",
+        "registration_url": "https://www.heyjom.com/event/score-marathon-2026-by-aia-vitality",
+        "state": "",
+        "distance": "5km",
+        "description": ""
+    },
+    {
+        "name": "Miri Half Marathon",
+        "location": "Marina Park City Miri City Hall, Sarawak",
+        "date": "2026-07-05",
+        "registration_url": "https://www.jomrun.com/event/Miri-Half-Marathon-Powered-By-JomRun-2026",
+        "state": "Sarawak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Semenyih Ultra",
+        "location": "Hulu Langat - Semenyih, Selangor",
+        "date": "2026-07-04",
+        "registration_url": "https://checkpointspot.asia/event/SEMENYIH-ULTRA2026",
+        "state": "Selangor",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "King of Kemensah Trail",
+        "location": "Kem Ghafar Baba, Kemensah Selangor",
+        "date": "2026-07-04",
+        "registration_url": "https://www.etranspay.com/page/kokt2026/eventinfo.aspx",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Mount Ophir Trail",
+        "location": "Lagenda Taman Negara Gunung Ledang, Sagil, Johor",
+        "date": "2026-06-26",
+        "registration_url": "https://checkpointspot.asia/event/mount-ophir-trail-2026",
+        "state": "Johor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Trail Des Gombak",
+        "location": "Stadium Majlis Perbandaran Selayang, Selangor",
+        "date": "2026-06-20",
+        "registration_url": "https://checkpointspot.asia/event/trail-des-gombak2026",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Skytrail Langkawi",
+        "location": "Langkawi, Kedah",
+        "date": "2026-06-19",
+        "registration_url": "https://checkpointspot.asia/event/skytrail-langkawi26",
+        "state": "Kedah",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Hulu Selangor Half Marathon",
+        "location": "Dataran Warisan, Kuala Kubu Bharu, Selangor",
+        "date": "2026-06-07",
+        "registration_url": "https://checkpointspot.asia/event/Hulu-Selangor-Half-Marathon-2026",
+        "state": "Selangor",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Perak Multisport Festival Duathlon",
+        "location": "Marina Island Pangkor, Lumut, Perak",
+        "date": "2026-06-07",
+        "registration_url": "https://www.racexasia.com/event/perak-multisport-festival-2026-perak-duathlon-pmdu26",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Durirun Balik Pulau International Marathon",
+        "location": "Kompleks Sukan Balik Pulau, Penang",
+        "date": "2026-06-06",
+        "registration_url": "https://www.racexasia.com/event/durirun-balik-pulau-international-marathon-2026-dbpm26",
+        "state": "Penang",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Perak Multisport Festival Triathlon",
+        "location": "Marina Island Pangkor, Lumut, Perak",
+        "date": "2026-06-06",
+        "registration_url": "https://www.racexasia.com/event/perak-multisport-festival-2026-perak-triathlon-pmtr26",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Perak Multisport Festival Aquathlon",
+        "location": "Marina Island Pangkor, Lumut, Perak",
+        "date": "2026-06-06",
+        "registration_url": "https://www.racexasia.com/event/perak-multisport-festival-2026-aquathlon-pmaq26",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Perak Multisport Festival Fun Run",
+        "location": "Marina Island Pangkor, Lumut, Perak",
+        "date": "2026-06-06",
+        "registration_url": "https://www.racexasia.com/event/perak-multisport-festival-2026-fun-run-pmfr26",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kuala Kangsar Half Marathon",
+        "location": "Dataran Pavilion Kuala Kangsar, Perak",
+        "date": "2026-05-31",
+        "registration_url": "https://www.racexasia.com/event/kuala-kangsar-half-marathon-2026-kkhm26",
+        "state": "Perak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Kuala Kangsar Half Marathon",
+        "location": "Dataran Pavilion Kuala Kangsar, Perak",
+        "date": "2026-05-31",
+        "registration_url": "https://www.racexasia.com/event/kuala-kangsar-half-marathon-2026-kkhm26",
+        "state": "Perak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Kuala Kangsar Half Marathon",
+        "location": "Dataran Pavilion Kuala Kangsar, Perak",
+        "date": "2026-05-31",
+        "registration_url": "https://www.racexasia.com/event/kuala-kangsar-half-marathon-2026-kkhm26",
+        "state": "Perak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Tanjung Tuan Trail Run",
+        "location": "Taman Eko Rimba Tanjung Tuan, Melaka",
+        "date": "2026-05-24",
+        "registration_url": "https://checkpointspot.asia/event/tanjung-tuan-trail-run26",
+        "state": "Melaka",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "113 International Triathlon Desaru",
+        "location": "Desaru, Johor",
+        "date": "2026-05-23",
+        "registration_url": "https://checkpointspot.asia/event/113-International-Triathlon-Desaru2026",
+        "state": "Johor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "HSL Samarahan Half Marathon",
+        "location": "La Promenade Mall, Kota Samarahan, Sarawak",
+        "date": "2026-05-17",
+        "registration_url": "https://checkpointspot.asia/event/hsl_samarahan_half_marathon2026",
+        "state": "Sarawak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Miri City Mayfest Run",
+        "location": "Marina Park City MBM Hall, Sarawak",
+        "date": "2026-05-17",
+        "registration_url": "https://www.jomrun.com/event/Miri-city-mayfest-run-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Janda Baik Ultra",
+        "location": "Janda Baik, Bentong, Pahang",
+        "date": "2026-05-16",
+        "registration_url": "https://checkpointspot.asia/event/JANDA-BAIK-ULTRA2026",
+        "state": "Pahang",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Taiping24H",
+        "location": "Dataran Kedamaian, Taman Tasik Taiping, Perak",
+        "date": "2026-05-15",
+        "registration_url": "https://checkpointspot.asia/event/Taiping-24H-2026",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "RSawit International Marathon",
+        "location": "Sibu Town Square, Sarawak",
+        "date": "2026-05-10",
+        "registration_url": "https://checkpointspot.asia/event/rsim26",
+        "state": "Sarawak",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Pantai Remis Half Marathon",
+        "location": "SMK Pantai Remis, Perak",
+        "date": "2026-05-10",
+        "registration_url": "https://howei.com/event_details/prhm2026",
+        "state": "Perak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Silent Run 5.0 Bintulu",
+        "location": "Sarawak",
+        "date": "2026-05-10",
+        "registration_url": "https://checkpointspot.asia/event/silent-run-bintulu26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Sesame Street Run",
+        "location": "Kepong Metropolitan Park, Kuala Lumpur",
+        "date": "2026-05-10",
+        "registration_url": "https://www.jomrun.com/event/Sesame-Street-Run-Powered-by-JomRun-Malaysia",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Mahir Run - Larian Rakan Muda 3.0",
+        "location": "Dataran Kemerdekaan Shah Alam",
+        "date": "2026-05-10",
+        "registration_url": "https://www.racexasia.com/event/mahir-run-larian-rakan-muda-3-0-mrrm26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Viper Challenge MAEPS",
+        "location": "Maeps Serdang, Selangor",
+        "date": "2026-05-10",
+        "registration_url": "https://www.heyjom.com/event/viper-challenge-maeps-2026",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Batu Kawa Fun Run",
+        "location": "Baru Batu Kawa, Kuching, Sarawak",
+        "date": "2026-05-03",
+        "registration_url": "https://www.ticket2u.com.my/event/46939/batu-kawa-fun-run-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Terengganu Marathon",
+        "location": "Stadium Sultan Mizan Zainal Abidin",
+        "date": "2026-05-02",
+        "registration_url": "https://terengganumarathon.com/?ref=52",
+        "state": "",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Tuba Ocean Run",
+        "location": "Tuba Island, Langkawi, Kedah",
+        "date": "2026-05-02",
+        "registration_url": "https://checkpointspot.asia/event/TOR26",
+        "state": "Kedah",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kapas Marang Swimathon",
+        "location": "Venue Kapas Island, Terengganu",
+        "date": "2026-05-02",
+        "registration_url": "https://www.racexasia.com/event/kapas-marang-swimathon-2026-tmos26",
+        "state": "Terengganu",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Silabur Ultra Trail",
+        "location": "Kampung Batu Bedang, Serian, Sarawak",
+        "date": "2026-05-02",
+        "registration_url": "https://checkpointspot.asia/event/Silabur-Ultra-Trail2026",
+        "state": "Sarawak",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Merapoh Rainforest Trail",
+        "location": "Kuala Lipis, Pahang",
+        "date": "2026-05-01",
+        "registration_url": "https://www.ticket2u.com.my/event/45764/merapoh-rainforest-trail-2026",
+        "state": "Pahang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "KL City Day Half Marathon - 10th Anniversary",
+        "location": "Kuala Lumpur City Centre",
+        "date": "2026-04-26",
+        "registration_url": "https://www.racexasia.com/event/kl-city-day-half-marathon-2026-10th-anniversary-klcd26",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "KIP Eco Run",
+        "location": "Mezzanine Floor, KipMall Kota Warisan, Sepang, Selangor",
+        "date": "2026-04-26",
+        "registration_url": "https://www.heyjom.com/event/kip-eco-run-2026-kipmall-kota-warisan",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Perlis International Marathon",
+        "location": "Stadium Tunku Syed Putra, Perlis",
+        "date": "2026-04-25",
+        "registration_url": "https://www.racexasia.com/event/perlis-international-marathon-2026-plim26",
+        "state": "Perlis",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Titi Ultra",
+        "location": "Padang Taman Titiwangsa, Hulu Langat, Selangor",
+        "date": "2026-04-24",
+        "registration_url": "https://checkpointspot.asia/event/Titi-Ultra-2026",
+        "state": "Selangor",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Kajang Ultra Marathon",
+        "location": "Stadium Kajang, Selangor",
+        "date": "2026-04-19",
+        "registration_url": "https://checkpointspot.asia/event/Kajang-Ultra-Marathon2026",
+        "state": "Selangor",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "Green Run Of Love",
+        "location": "Central Park One Utama, Petaling Jaya",
+        "date": "2026-04-18",
+        "registration_url": "https://www.racexasia.com/event/green-run-of-love-2026-grol26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Sarawak Sunrise Aerodance",
+        "location": "Kuching, Miri, Sibu, Bintulu, Sarawak",
+        "date": "2026-04-18",
+        "registration_url": "https://checkpointspot.asia/event/sarawak-sunrise-aerodance26",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "CAMRUN Cameron Night Run",
+        "location": "Padang Awam MDCH, Cameron Highlands, Pahang",
+        "date": "2026-04-12",
+        "registration_url": "https://www.boltevents.asia/camrun",
+        "state": "Pahang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Bumi Run- Larian Rakan Muda 3.0",
+        "location": "Dataran Kemerdekaan Shah Alam",
+        "date": "2026-04-12",
+        "registration_url": "https://www.racexasia.com/event/bumi-run-larian-rakan-muda-3-0-brrm26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Butterworth Run",
+        "location": "Dewan Dato' Haji Ahmad Badawi, Butterworth, Penang",
+        "date": "2026-04-12",
+        "registration_url": "https://howei.com/event_details/butterworthrun2026",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "IJM RIMBAYU Half Marathon Run with Me",
+        "location": "The Arc, IJM Rimbayu",
+        "date": "2026-04-11",
+        "registration_url": "https://www.jomrun.com/event/IJM-RIMBAYU-Half-Marathon-Run-with-Me-2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "IJM RIMBAYU Run With Me",
+        "location": "The Arc, IJM Rimbayu",
+        "date": "2026-04-11",
+        "registration_url": "https://www.jomrun.com/event/IJM-RIMBAYU-Run-with-Me-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Oxygen Rush Fun Run",
+        "location": "Dataran Kemerdekaan Shah Alam, Selangor",
+        "date": "2026-04-11",
+        "registration_url": "https://www.ticket2u.com.my/event/46271/oxygen-rush-fun-run",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Hidden Village Trail Run",
+        "location": "Hidden Village Trail, Ulu Tembeling, Pahang",
+        "date": "2026-04-11",
+        "registration_url": "https://checkpointspot.asia/event/hidden-village-trail-run26",
+        "state": "Pahang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Pet Walk 2.0",
+        "location": "Majlis Bandaraya Kuching Selatan, Sarawak",
+        "date": "2026-04-06",
+        "registration_url": "https://checkpointspot.asia/event/PET-WALK-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Cybercity Half Marathon",
+        "location": "Persiaran Flora, Cyberjaya",
+        "date": "2026-04-05",
+        "registration_url": "https://www.jomrun.com/event/Cybercity-Half-Marathon-2026-Powered-by-JomRun",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Race Against Cancer Run",
+        "location": "Kepong Metropolitan Park, Kuala Lumpur",
+        "date": "2026-03-29",
+        "registration_url": "https://checkpointspot.asia/event/race-against-cancer-run26",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Berapit CNY Run (SJK(C) Perkampungan Berapit, Butterworth)",
+        "location": "",
+        "date": "2026-03-08",
+        "registration_url": "https://howei.com/event_details/berapitcnyrun2025",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Civil Defence Night Run",
+        "location": "Setia Fontaines, Bertam, Penang",
+        "date": "2026-02-28",
+        "registration_url": "https://www.heyjom.com/event/civil-defence-night-run-2026",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Putrajaya Lake Half Marathon",
+        "location": "Padang Floria @ Anjung Floria, Presint 4, Putrajaya",
+        "date": "2026-02-15",
+        "registration_url": "https://checkpointspot.asia/event/Putrajaya-Lake-HM-2026",
+        "state": "Putrajaya",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Pantai Malindo Half Marathon (SRJK(C) Yu Chye, Penang)",
+        "location": "",
+        "date": "2026-02-15",
+        "registration_url": "https://howei.com/event_details/pantaimalindohalfmarathon2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Bukit Lagong Challenge",
+        "location": "Taman Rimba Bukit Lagong, Selayang, Selangor",
+        "date": "2026-02-14",
+        "registration_url": "https://checkpointspot.asia/event/BLC26",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Sarawak Color Night Run Festival",
+        "location": "Majlis Bandaraya Kuching Selatan, Sarawak",
+        "date": "2026-02-14",
+        "registration_url": "https://checkpointspot.asia/event/sarawak-color-night-run-festival26",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Cabaran Gunung Rajah",
+        "location": "Kg Pertak, Kuala Kubu Bharu, Selangor",
+        "date": "2026-02-14",
+        "registration_url": "https://checkpointspot.asia/event/Cabaran-Gunung-Rajah2026",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Batu Bersurat Half Marathon",
+        "location": "Bulatan Batu Bersurat, Kuala Berang, Terengganu",
+        "date": "2026-02-14",
+        "registration_url": "https://howei.com/event_details/batubersurathalfmarathon2026",
+        "state": "Terengganu",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "World Cancer Day Run",
+        "location": "Tasik Darul Aman, Jitra, Kedah",
+        "date": "2026-02-14",
+        "registration_url": "https://www.heyjom.com/event/world-cancer-day-run",
+        "state": "Kedah",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Plogging Lata Medang",
+        "location": "Kg Pertak, Kuala Kubu Bharu , Selangor",
+        "date": "2026-02-14",
+        "registration_url": "https://checkpointspot.asia/event/plogging-lata-medang2026",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "MAIWP Run 2026 - Putrajaya",
+        "location": "Dataran Putrajaya",
+        "date": "2026-02-08",
+        "registration_url": "https://checkpointspot.asia/event/maiwp-run-2026-putrajaya",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Subang Jaya Half Marathon",
+        "location": "Arena MBSJ Subang Jaya, Selangor",
+        "date": "2026-02-08",
+        "registration_url": "https://www.racexasia.com/event/subang-jaya-half-marathon-2026-sjhm26",
+        "state": "Selangor",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Johor Bahru City Half Marathon",
+        "location": "Aeon Mall Bandar Dato Onn, Johor Bahru",
+        "date": "2026-02-08",
+        "registration_url": "https://www.jomrun.com/event/Johor-Bahru-City-Half-Marathon-Powered-by-JomRun-2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "BMW Wheelcorp Premium Charity Run",
+        "location": "Aeon Mall Bandar Dato Onn, Johor Bahru",
+        "date": "2026-02-08",
+        "registration_url": "https://www.jomrun.com/event/BMW-Wheelcorp-Premium-Charity-Run-Johor-Bahru-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Ultron® Wetlands Trail Run",
+        "location": "Gamuda Cove, Dengkil",
+        "date": "2026-02-08",
+        "registration_url": "https://www.jomrun.com/event/Ultron-Wetlands-Trail-Run-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "The Miles For Miracle",
+        "location": "Alam Damai Park, Kuala Lumpur",
+        "date": "2026-02-08",
+        "registration_url": "https://checkpointspot.asia/event/miles-for-miracle26",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Capybara Run",
+        "location": "Aeon Mall Bandar Dato Onn, Johor Bahru",
+        "date": "2026-02-08",
+        "registration_url": "https://www.jomrun.com/event/Capybara-Run-Powered-by-JomRun-Johor-Bahru",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Petronita Orchid Run & Ride",
+        "location": "Tower 3 KLCC, Level 4",
+        "date": "2026-02-08",
+        "registration_url": "https://www.heyjom.com/event/petronita-orchid-run-ride-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Litar Run - Larian Rakan Muda 3.0",
+        "location": "Dataran Kemerdekaan Shah Alam",
+        "date": "2026-02-08",
+        "registration_url": "https://www.racexasia.com/event/litar-run-larian-rakan-muda-3-0-lrrm26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Batu Maung Go Green Briswalk",
+        "location": "Taman Jajar Sg Ara, Penang",
+        "date": "2026-02-08",
+        "registration_url": "https://www.heyjom.com/event/batu-maung-go-green-briswalk-2026",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "SA Sentral Neon Run",
+        "location": "Galeria SA Sentral, Selangor",
+        "date": "2026-02-07",
+        "registration_url": "https://checkpointspot.asia/event/sa-sentral-neon-run26",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Ang Pau Run!",
+        "location": "Marina Park City Miri, Sarawak",
+        "date": "2026-02-07",
+        "registration_url": "https://www.jomrun.com/event/2026-Ang-Pau-Run",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Asia Triathlon Cup Putrajaya",
+        "location": "Kompleks Sukan Air, Putrajaya",
+        "date": "2026-02-07",
+        "registration_url": "https://checkpointspot.asia/event/ATC-Putrajaya-2026",
+        "state": "Putrajaya",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kampung Nature Run",
+        "location": "Ayer Itam, Tasek Gelugor, Penang",
+        "date": "2026-02-07",
+        "registration_url": "https://howei.com/registration/2031",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "KL 10",
+        "location": "Pavilion Kuala Lumpur",
+        "date": "2026-02-01",
+        "registration_url": "https://www.heyjom.com/event/kl-10 ",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Larian Hari Wilayah Persekutuan",
+        "location": "Dataran DBKL, Kuala Lumpur",
+        "date": "2026-02-01",
+        "registration_url": "https://www.racexasia.com/event/larian-hwp-2026-lhwp26",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "New Year Fun Run - IPOH",
+        "location": "AEON Mall Kinta City, Perak",
+        "date": "2026-02-01",
+        "registration_url": "https://www.heyjom.com/event/new-year-fun-run-2026-ipoh",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Selama Ultra",
+        "location": "Padang Bola Kampung Masjid Ijok, Selama, Perak",
+        "date": "2026-02-01",
+        "registration_url": "https://checkpointspot.asia/event/SU26",
+        "state": "Perak",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Runati Samarahan Hero Run",
+        "location": "Summer Mall Kota Samarahan, Sarawak",
+        "date": "2026-02-01",
+        "registration_url": "https://www.heyjom.com/event/Runati-Samarahan-Hero-Run-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Run 4 Gaza",
+        "location": "Persiaran Flora, Cyberjaya",
+        "date": "2026-02-01",
+        "registration_url": "https://www.heyjom.com/event/run-4-gaza",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Malaysia Music Night Run",
+        "location": "Pavilion Kuala Lumpur, Bukit Bintang",
+        "date": "2026-02-01",
+        "registration_url": "https://checkpointspot.asia/event/Malaysia-Music-Night-Run-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Chinese New Year Run",
+        "location": "Taman Tasik Titiwangsa, Kuala Lumpur",
+        "date": "2026-02-01",
+        "registration_url": "https://www.jomrun.com/event/Chinese-New-Year-Run-Powered-by-JomRun-2026",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Putrajaya Open Day 2026 - Langkah Ceria!",
+        "location": "Dataran Putrajaya",
+        "date": "2026-01-31",
+        "registration_url": "https://raceroster.com/events/2026/114287/putrajaya-open-day-2026-langkah-ceria",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Malatra Ultra",
+        "location": "Taman Wetland Putrajaya, Precinct 11, Putrajaya",
+        "date": "2026-01-31",
+        "registration_url": "https://checkpointspot.asia/event/Malatra-Ultra-2026",
+        "state": "Putrajaya",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Neon Night Run",
+        "location": "Mydin MITC Ayer Keroh, Melaka",
+        "date": "2026-01-31",
+        "registration_url": "https://checkpointspot.asia/event/Neon-Night-Run-Melaka2026",
+        "state": "Melaka",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Ga’lok Run",
+        "location": "Padang Blaze Arena, Paka",
+        "date": "2026-01-31",
+        "registration_url": "https://www.heyjom.com/event/galok-run-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Jerai Night Half Marathon",
+        "location": "Gunung Jerai, Yan, Kedah",
+        "date": "2026-01-30",
+        "registration_url": "https://checkpointspot.asia/event/Jerai-Night-Half-Marathon2026",
+        "state": "Kedah",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Step Up! - Hari Wilayah",
+        "location": "Dataran DBKL, Kuala Lumpur",
+        "date": "2026-01-25",
+        "registration_url": "https://raceroster.com/events/2026/114342/step-up-hari-wilayah-2026",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "New Year Heroes Charity Run",
+        "location": "Alam Damai Recreation Park, Tmn Alam Damai, KL",
+        "date": "2026-01-25",
+        "registration_url": "https://www.racexasia.com/event/new-year-heroes-charity-run-2026-nyhr26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Oasis Eye Health Carnival",
+        "location": "Setia Fontaines, Bertam, Penang",
+        "date": "2026-01-25",
+        "registration_url": "https://www.heyjom.com/event/Oasis-Eye-Health-Carnival",
+        "state": "Penang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Bintulu Half Marathon",
+        "location": "Dewan Suarah Bintulu, Sarawak",
+        "date": "2026-01-25",
+        "registration_url": "https://www.jomrun.com/event/Bintulu-Half-Marathon-Powered-by-JomRun",
+        "state": "Sarawak",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Jesselton Half Marathon",
+        "location": "Dataran Kompleks Sukan Likas, Sabah",
+        "date": "2026-01-25",
+        "registration_url": "https://www.ticket2u.com.my/event/45765/jesselton-half-marathon-2026",
+        "state": "Sabah",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "CUEPACS Perak Fun Run",
+        "location": "Dataran MBI, Ipoh, Perak",
+        "date": "2026-01-25",
+        "registration_url": "https://checkpointspot.asia/event/cuepacs-perak-fun-run",
+        "state": "Perak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "BMW Wheelcorp Premium Charity Walkathon",
+        "location": "Sunsuria City, Sepang",
+        "date": "2026-01-25",
+        "registration_url": "https://www.jomrun.com/event/BMW-Wheelcorp-Premium-Charity-Walkathon-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "PSP King Of The Forest",
+        "location": "Kerinchi Hill Forest Park, KL",
+        "date": "2026-01-25",
+        "registration_url": "https://race.mas.run/pspkingoftheforest",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "UiTM Ultra Vol.8",
+        "location": "Stadium, UiTM Shah Alam, Selangor",
+        "date": "2026-01-24",
+        "registration_url": "https://checkpointspot.asia/event/uitm-ultra-2026",
+        "state": "Selangor",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Selayang Sunglass Run",
+        "location": "Bandar Baru Selayang, Selangor",
+        "date": "2026-01-24",
+        "registration_url": "https://checkpointspot.asia/event/SSR26",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "BMW Lee Motors Kedah Run",
+        "location": "Darul Aman Stadium, Alor Setar",
+        "date": "2026-01-24",
+        "registration_url": "https://www.jomrun.com/event/BMW-Lee-Motors-Kedah-Run-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Capybara Run",
+        "location": "Darul Aman Stadium, Kedah",
+        "date": "2026-01-24",
+        "registration_url": "https://www.jomrun.com/event/Capybara-Run-Powered-by-JomRun-Kedah",
+        "state": "Kedah",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Twin City Marathon",
+        "location": "Persiaran Flora, Cyberjaya",
+        "date": "2026-01-18",
+        "registration_url": "https://www.ticket2u.com.my/event/cd?id=45523&q=464e7d07ad8898395b32aa2412a522e6",
+        "state": "",
+        "distance": "42km",
+        "description": ""
+    },
+    {
+        "name": "PMG Health Run",
+        "location": "Marina ParkCity, Miri, Sarawak",
+        "date": "2026-01-18",
+        "registration_url": "https://www.jomrun.com/event/PMG-HEALTY-RUN-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Run For Life",
+        "location": "Perdana Botanical Garden, Tasik Perdana, Kuala Lumpur",
+        "date": "2026-01-18",
+        "registration_url": "https://checkpointspot.asia/event/Run-For-Life-2026",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "New Year Fun Run - TAIPING",
+        "location": "AEON Mall Taiping",
+        "date": "2026-01-18",
+        "registration_url": "https://www.heyjom.com/event/new-year-fun-run-2026-taiping",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "RUNLIGA Team Race",
+        "location": "Wyndham Garden, Frasers Hill, Pahang",
+        "date": "2026-01-18",
+        "registration_url": "https://getbiib.com/events/1520",
+        "state": "Pahang",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Godzilla Run Malaysia",
+        "location": "Dataran Putrajaya",
+        "date": "2026-01-11",
+        "registration_url": "https://www.racexasia.com/event/godzilla-run-2026-gdzl26",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kuching Half Marathon",
+        "location": "Majlis Bandaraya Kuching Selatan",
+        "date": "2026-01-11",
+        "registration_url": "https://www.jomrun.com/event/Kuching-Half-Marathon-2026-Powered-By-JomRun",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Marlborough College (MCM) Triathlon",
+        "location": "Iskandar Puteri, Johor",
+        "date": "2026-01-11",
+        "registration_url": "https://checkpointspot.asia/event/Marlborough-College-Triathlon-2026",
+        "state": "Johor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kwasa Damansara Hari Hari Fun Run",
+        "location": "Taman Bandar Kwasa Damansara",
+        "date": "2026-01-11",
+        "registration_url": "https://www.heyjom.com/event/kwasa-damansara-hari-hari-fun-run-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Watergate 24 Hours Special Edition",
+        "location": "Kompleks Sukan Putrajaya",
+        "date": "2026-01-10",
+        "registration_url": "https://www.heyjom.com/event/Watergate-24-Hours-Special-Edition",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Larian Inklusif Kasih",
+        "location": "UiTM Shah Alam, Selangor",
+        "date": "2026-01-10",
+        "registration_url": "https://www.ticket2u.com.my/event/45969/larian-inklusif-kasih",
+        "state": "Selangor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Run For Wellness",
+        "location": "Padang Kawad UTHM, Johor",
+        "date": "2026-01-10",
+        "registration_url": "https://howei.com/event_details/runforwellness",
+        "state": "Johor",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Melawati Run",
+        "location": "Lorong Sarawak, Taman Melawati, Kuala Lumpur",
+        "date": "2026-01-04",
+        "registration_url": "https://www.racexasia.com/event/melawati-run-2026-wati26",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Bukit Kiara Ultra Challenge",
+        "location": "Taman Rimba Bukit Kiara, TTDI, K.Lumpur",
+        "date": "2026-01-04",
+        "registration_url": "https://checkpointspot.asia/event/bukit-kiara-ultra-2026",
+        "state": "",
+        "distance": "50km+",
+        "description": ""
+    },
+    {
+        "name": "Skyhawk Nature Run",
+        "location": "Rumah Melaka, Bukit Katil, Melaka",
+        "date": "2026-01-04",
+        "registration_url": "https://checkpointspot.asia/event/Skyhawk-Nature-Run-2026",
+        "state": "Melaka",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Bertam Half Marathon",
+        "location": "Mydin Bertam, Kepala Batas, Butterworth",
+        "date": "2026-01-04",
+        "registration_url": "https://www.ticket2u.com.my/event/43997/bertam-half-marathon-2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "New Year Time Trial Challenge Run",
+        "location": "Persiaran Flora, Cyberjaya",
+        "date": "2026-01-04",
+        "registration_url": "https://www.heyjom.com/event/NEW-YEAR-TIME-TRIAL-CHALLENGE-RUN-2026",
+        "state": "",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Golden Paddy Half Marathon",
+        "location": "Dewan Seri Bernam Sungai Besar Selangor",
+        "date": "2026-01-04",
+        "registration_url": "https://www.heyjom.com/event/golden-paddy-half-marathon-2026",
+        "state": "",
+        "distance": "21km",
+        "description": ""
+    },
+    {
+        "name": "Nasi Lemak New Year Run",
+        "location": "Marina Park City, Sarawak",
+        "date": "2026-01-04",
+        "registration_url": "https://www.jomrun.com/event/Nasi-Lemak-New-Year-Run-2026",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "Kopi Lari 7km Morning Run",
+        "location": "Darulaman Park, Kedah",
+        "date": "2026-01-03",
+        "registration_url": "https://checkpointspot.asia/event/KOPI-LARI-7KM-MORNING-RUN2026",
+        "state": "Kedah",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "New Year Resolution Charity Run",
+        "location": "MBKS, Kuching, Sarawak",
+        "date": "2026-01-01",
+        "registration_url": "https://checkpointspot.asia/event/nyrcr26",
+        "state": "Sarawak",
+        "distance": "",
+        "description": ""
+    },
+    {
+        "name": "KL New Year Run",
+        "location": "Dataran DBKL, Kuala Lumpur",
+        "date": "2026-01-01",
+        "registration_url": "https://www.racexasia.com/event/kl-new-year-run-2026-nykl26",
+        "state": "Kuala Lumpur",
+        "distance": "",
+        "description": ""
+    }
+]

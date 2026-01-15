@@ -1,76 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import Navbar from "@/components/navbar";
-import EventsTable from "@/components/events-table";
-import LogoAnimation from "@/components/lottie/logo-animation";
+import React from "react";
+import EventsGrid from "@/components/events-grid";
+import { HeroSection } from "@/components/hero-section";
 import { loadEvents } from '@/utils/loadEvents';
-import DisclaimerModal from "@/components/disclaimer-modal"; 
-
-interface Event {
-  name: string;
-  location: string;
-  date: string;
-  registration_url: string;
-}
+import type { Event } from "@/types/event";
 
 interface HomeProps {
   events: Event[];
 }
 
 export default function Home({ events }: HomeProps) {
-  const [isDisclaimerOpen, setIsDisclaimerOpen] = useState(false);
-
-  // Check if the user has already acknowledged the disclaimer
-  useEffect(() => {
-    const hasAcknowledged = localStorage.getItem("hasAcknowledgedDisclaimer");
-    if (!hasAcknowledged) {
-      setIsDisclaimerOpen(true);
-    }
-  }, []);
-
-  const handleCloseDisclaimer = () => {
-    setIsDisclaimerOpen(false);
-    localStorage.setItem("hasAcknowledgedDisclaimer", "true");
-  };
-
   return (
-    <div>
-      {/* Disclaimer Modal */}
-      <DisclaimerModal isOpen={isDisclaimerOpen} onClose={handleCloseDisclaimer} />
-
-      {/* Navbar */}
-      <Navbar />
+    <div className="min-h-screen">
+      {/* Hero Section with Stats */}
+      <HeroSection events={events} />
 
       {/* Main Content */}
-      <main className="pt-20 px-4">
-        {/* Hero Section */}
-        <div className="container mx-auto text-center mt-20">
-          <LogoAnimation />
-          <h1 className="mt-5 scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl">
-            Your Gateway to Running Events in Malaysia
-          </h1>
-          <p className="text-lg mb-8 animate-pulse">
-            Discover, Join, and Conquer the Best Running Events Across the Country
-          </p>
-          <a href="#list-events">
-            <Button>Explore Upcoming Events</Button>
-          </a>
-        </div>
-
+      <main className="container mx-auto px-4 pb-16 max-w-5xl -mt-4">
         {/* Events Section */}
-        <div className="container mx-auto mt-16 max-w-4xl">
-          <h2 id="list-events" className="text-2xl font-bold text-foreground mb-6 text-center">
+        <section id="events">
+          <h2 className="text-2xl font-bold text-foreground mb-6">
             Upcoming Events
           </h2>
-          <EventsTable events={events} />
-        </div>
-
-        {/* Inspirational Quote */}
-        <div className="container mx-auto text-center mt-20">
-          <blockquote className="pl-6 mb-8 italic text-xl">
-            &quot;The only way to define your limits is by going beyond them.&quot;
-          </blockquote>
-        </div>
+          <EventsGrid events={events} />
+        </section>
       </main>
     </div>
   );
@@ -82,5 +34,6 @@ export async function getStaticProps() {
     props: {
       events,
     },
+    revalidate: 3600, // ISR: revalidate every hour
   };
 }

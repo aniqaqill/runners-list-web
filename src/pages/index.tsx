@@ -15,10 +15,10 @@ export default function Home({ events }: HomeProps) {
       <HeroSection events={events} />
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 pb-16 max-w-5xl -mt-4">
+      <main className="container mx-auto px-4 pb-16 max-w-5xl relative z-10 pt-8">
         {/* Events Section */}
         <section id="events">
-          <h2 className="text-2xl font-bold text-foreground mb-6">
+          <h2 className="text-fluid-2xl font-bold text-foreground mb-6">
             Upcoming Events
           </h2>
           <EventsGrid events={events} />

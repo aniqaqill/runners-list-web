@@ -10,23 +10,38 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // Wait for client-side hydration to avoid flash
   useEffect(() => {
     setMounted(true);
+    
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/70 dark:bg-black/70 backdrop-blur-xl"
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-white/20 dark:border-white/10 shadow-lg shadow-purple-500/5' 
+          : 'bg-transparent border-b border-transparent'
+      }`}
     >
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
-        {/* Logo */}
+        {/* Logo with hover effect */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9">
-            {/* Show both logos, use CSS to toggle visibility to prevent flash */}
+          <motion.div 
+            whileHover={{ scale: 1.05, rotate: -3 }}
+            whileTap={{ scale: 0.95 }}
+            className="relative w-9 h-9"
+          >
             <Image
               src="/running-black.svg"
               alt="Runners List Logo"
@@ -43,21 +58,30 @@ export default function Navbar() {
                 mounted && resolvedTheme === "dark" ? "opacity-100" : "opacity-0"
               }`}
             />
-          </div>
+          </motion.div>
           <div className="hidden sm:block">
-            <span className="text-lg font-bold text-foreground">
+            <motion.span 
+              className="text-fluid-lg font-bold text-foreground block"
+              whileHover={{ x: 2 }}
+              transition={{ duration: 0.2 }}
+            >
               Runners List
-            </span>
-            <span className="block text-xs text-muted-foreground -mt-0.5">
+            </motion.span>
+            <span className="block text-fluid-xs text-muted-foreground -mt-0.5">
               Malaysia
             </span>
           </div>
         </Link>
 
         {/* Right Side */}
-        <div className="flex items-center gap-3">
-          {/* Theme Toggle */}
-          <ModeToggle />
+        <div className="flex items-center gap-2">
+          {/* Theme Toggle with wrapper for animation */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <ModeToggle />
+          </motion.div>
         </div>
       </div>
     </motion.nav>

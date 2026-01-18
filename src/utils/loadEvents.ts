@@ -1,12 +1,7 @@
-import eventsData from '../../data/events.json';
 import type { Event } from '@/types/event';
 
 /**
- * Load events from the static JSON file
- * Sorts by date (upcoming first) and filters out past events optionally
- */
-/**
- * Load events from the API or static JSON file as fallback
+ * Load events from the API
  * Sorts by date (upcoming first) and filters out past events optionally
  */
 export const loadEvents = async (): Promise<Event[]> => {
@@ -35,13 +30,12 @@ export const loadEvents = async (): Promise<Event[]> => {
       }
       console.error('API returned non-array:', res.statusText);
     } catch (err) {
-      console.error('Failed to fetch events from API, falling back to static data:', err);
+      console.error('Failed to fetch events from API:', err);
     }
   }
 
-  // Fallback to static data
-  const events = eventsData as Event[];
-  return sortEvents(events);
+  // Return empty array if API fails or no URL
+  return [];
 };
 
 /**

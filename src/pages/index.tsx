@@ -29,7 +29,7 @@ export default function Home({ events }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  const events = loadEvents();
+  const events = await loadEvents();
   return {
     props: {
       events,

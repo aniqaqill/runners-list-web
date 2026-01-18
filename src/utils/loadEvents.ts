@@ -5,15 +5,43 @@ import type { Event } from '@/types/event';
  * Load events from the static JSON file
  * Sorts by date (upcoming first) and filters out past events optionally
  */
-export const loadEvents = (): Event[] => {
-  const events = eventsData as Event[];
+/**
+ * Load events from the API or static JSON file as fallback
+ * Sorts by date (upcoming first) and filters out past events optionally
+ */
+export const loadEvents = async (): Promise<Event[]> => {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   
-  // Sort by date ascending (upcoming events first)
-  return events.sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-    return dateA.getTime() - dateB.getTime();
-  });
+  // Helper to sort events
+  const sortEvents = (data: Event[]) => {
+    return data.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateA.getTime() - dateB.getTime();
+    });
+  };
+
+  // Try fetching from API if URL is present
+  if (apiUrl) {
+    try {
+      // Append /events if the URL doesn't already end with it, just to be safe
+      // but assuming the var is the base API v1 url: http://IP:8080/api/v1
+      const res = await fetch(`${apiUrl}/events`, { next: { revalidate: 60 } });
+      if (res.ok) {
+        const remoteEvents = await res.json();
+        if (Array.isArray(remoteEvents)) {
+          return sortEvents(remoteEvents);
+        }
+      }
+      console.error('API returned non-array:', res.statusText);
+    } catch (err) {
+      console.error('Failed to fetch events from API, falling back to static data:', err);
+    }
+  }
+
+  // Fallback to static data
+  const events = eventsData as Event[];
+  return sortEvents(events);
 };
 
 /**

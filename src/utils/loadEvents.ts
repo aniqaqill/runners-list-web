@@ -23,12 +23,14 @@ export const loadEvents = async (): Promise<Event[]> => {
       // but assuming the var is the base API v1 url: http://IP:8080/api/v1
       const res = await fetch(`${apiUrl}/events`, { next: { revalidate: 60 } });
       if (res.ok) {
-        const remoteEvents = await res.json();
+        const response = await res.json();
+        // API returns { data: [...], error: false }
+        const remoteEvents = response.data || response;
         if (Array.isArray(remoteEvents)) {
           return sortEvents(remoteEvents);
         }
       }
-      console.error('API returned non-array:', res.statusText);
+      console.error('API response error:', res.statusText);
     } catch (err) {
       console.error('Failed to fetch events from API:', err);
     }

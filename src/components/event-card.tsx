@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin, ExternalLink, Timer, Sparkles } from 'lucide-react';
+import React, { useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Calendar, MapPin, ExternalLink, Timer, Sparkles, Share2, Check } from 'lucide-react';
 import type { Event } from '@/types/event';
 import { formatEventDate, getDaysUntil, isEventEnded } from '@/utils/loadEvents';
 
@@ -31,6 +31,33 @@ export default function EventCard({ event, index }: EventCardProps) {
   const ended = isEventEnded(event.date);
   const daysUntil = getDaysUntil(event.date);
   const distanceStyle = getDistanceStyle(event.distance);
+  const [copied, setCopied] = useState(false);
+
+  /**
+   * Share event using Web Share API with clipboard fallback
+   */
+  const handleShare = useCallback(async () => {
+    const shareData = {
+      title: event.name,
+      text: `Check out ${event.name} on ${formatEventDate(event.date)} in ${event.location || event.state}!`,
+      url: event.registration_url,
+    };
+
+    try {
+      if (typeof navigator !== 'undefined' && navigator.share) {
+        await navigator.share(shareData);
+      } else if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(event.registration_url);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
+    } catch (error) {
+      // User cancelled share or error occurred - fail silently
+      if ((error as Error).name !== 'AbortError') {
+        console.error('Share failed:', error);
+      }
+    }
+  }, [event]);
 
   return (
     <motion.div
@@ -142,26 +169,66 @@ export default function EventCard({ event, index }: EventCardProps) {
             )}
           </div>
 
-          {/* CTA Button with glow effect */}
-          <motion.a
-            href={event.registration_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className={`relative flex items-center justify-center gap-2 w-full py-3 rounded-xl text-fluid-sm font-medium transition-all duration-300 overflow-hidden ${
-              ended
-                ? 'bg-gray-200 dark:bg-gray-800 text-gray-500 cursor-not-allowed pointer-events-none'
-                : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/40'
-            }`}
-          >
-            {/* Shimmer effect on hover */}
-            {!ended && (
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            )}
-            <ExternalLink className="w-4 h-4 relative" />
-            <span className="relative">{ended ? 'Event Ended' : 'Register Now'}</span>
-          </motion.a>
+          {/* CTA Buttons Row */}
+          <div className="flex items-center gap-2">
+            {/* Register Button with glow effect */}
+            <motion.a
+              href={event.registration_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className={`relative flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-fluid-sm font-medium transition-all duration-300 overflow-hidden ${
+                ended
+                  ? 'bg-gray-200 dark:bg-gray-800 text-gray-500 cursor-not-allowed pointer-events-none'
+                  : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/40'
+              }`}
+            >
+              {/* Shimmer effect on hover */}
+              {!ended && (
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+              )}
+              <ExternalLink className="w-4 h-4 relative" />
+              <span className="relative">{ended ? 'Event Ended' : 'Register Now'}</span>
+            </motion.a>
+
+            {/* Share Button */}
+            <motion.button
+              onClick={handleShare}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`relative flex items-center justify-center p-3 rounded-xl transition-all duration-300 ${
+                copied
+                  ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                  : 'bg-white/10 dark:bg-white/5 text-muted-foreground border border-white/20 dark:border-white/10 hover:border-purple-500/30 hover:text-purple-500'
+              } backdrop-blur-sm`}
+              aria-label="Share event"
+            >
+              <AnimatePresence mode="wait" initial={false}>
+                {copied ? (
+                  <motion.div
+                    key="check"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    exit={{ scale: 0, rotate: 180 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Check className="w-4 h-4" />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="share"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Share2 className="w-4 h-4" />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.button>
+          </div>
         </div>
       </div>
     </motion.div>

@@ -1,5 +1,41 @@
 import type { Event } from '@/types/event';
 
+// Malaysia timezone offset in hours (UTC+8)
+const MALAYSIA_TIMEZONE_OFFSET = 8;
+
+/**
+ * Get current date in Malaysia timezone as date-only components
+ * This ensures consistent date comparison regardless of server timezone
+ */
+const getMalaysiaDateComponents = (): { year: number; month: number; day: number } => {
+  const now = new Date();
+  // Add Malaysia offset to get Malaysia local time in UTC representation
+  const malaysiaTime = new Date(now.getTime() + MALAYSIA_TIMEZONE_OFFSET * 60 * 60 * 1000);
+  return {
+    year: malaysiaTime.getUTCFullYear(),
+    month: malaysiaTime.getUTCMonth(),
+    day: malaysiaTime.getUTCDate(),
+  };
+};
+
+/**
+ * Parse event date string (YYYY-MM-DD or ISO format) into date components
+ * Handles both "2026-01-26" and "2026-01-26T00:00:00Z" formats
+ */
+const parseEventDate = (dateString: string): { year: number; month: number; day: number } => {
+  // Extract just the date part (YYYY-MM-DD)
+  const datePart = dateString.split('T')[0];
+  const [year, month, day] = datePart.split('-').map(Number);
+  return { year, month: month - 1, day }; // month is 0-indexed for Date.UTC
+};
+
+/**
+ * Get UTC timestamp for a date (midnight)
+ */
+const getDateTimestamp = (year: number, month: number, day: number): number => {
+  return Date.UTC(year, month, day);
+};
+
 /**
  * Load events from the API
  * Sorts by date (upcoming first) and filters out past events optionally
@@ -66,58 +102,68 @@ export const getUniqueDistances = (events: Event[]): string[] => {
 };
 
 /**
- * Check if event has ended
+ * Check if event has ended (timezone-aware for Malaysia)
  */
 export const isEventEnded = (dateString: string): boolean => {
-  const eventDate = new Date(dateString);
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  return eventDate < today;
+  const event = parseEventDate(dateString);
+  const today = getMalaysiaDateComponents();
+  
+  const eventTimestamp = getDateTimestamp(event.year, event.month, event.day);
+  const todayTimestamp = getDateTimestamp(today.year, today.month, today.day);
+  
+  return eventTimestamp < todayTimestamp;
 };
 
 /**
- * Check if event is this week
+ * Check if event is this week (timezone-aware for Malaysia)
  */
 export const isThisWeek = (dateString: string): boolean => {
-  const eventDate = new Date(dateString);
-  const today = new Date();
-  const weekFromNow = new Date(today);
-  weekFromNow.setDate(today.getDate() + 7);
-  return eventDate >= today && eventDate <= weekFromNow;
+  const event = parseEventDate(dateString);
+  const today = getMalaysiaDateComponents();
+  
+  const eventTimestamp = getDateTimestamp(event.year, event.month, event.day);
+  const todayTimestamp = getDateTimestamp(today.year, today.month, today.day);
+  const weekFromNowTimestamp = todayTimestamp + 7 * 24 * 60 * 60 * 1000;
+  
+  return eventTimestamp >= todayTimestamp && eventTimestamp <= weekFromNowTimestamp;
 };
 
 /**
- * Check if event is this month
+ * Check if event is this month (timezone-aware for Malaysia)
  */
 export const isThisMonth = (dateString: string): boolean => {
-  const eventDate = new Date(dateString);
-  const today = new Date();
-  return (
-    eventDate.getMonth() === today.getMonth() &&
-    eventDate.getFullYear() === today.getFullYear()
-  );
+  const event = parseEventDate(dateString);
+  const today = getMalaysiaDateComponents();
+  
+  return event.year === today.year && event.month === today.month;
 };
 
 /**
  * Format date for display
+ * Uses explicit date components to avoid timezone parsing issues
  */
 export const formatEventDate = (dateString: string): string => {
-  const date = new Date(dateString);
+  const event = parseEventDate(dateString);
+  // Create date at noon UTC to avoid any DST/timezone edge cases during formatting
+  const date = new Date(Date.UTC(event.year, event.month, event.day, 12, 0, 0));
   return date.toLocaleDateString('en-MY', {
     weekday: 'short',
     year: 'numeric',
     month: 'short',
     day: 'numeric',
+    timeZone: 'Asia/Kuala_Lumpur',
   });
 };
 
 /**
- * Get days until event
+ * Get days until event (timezone-aware for Malaysia)
  */
 export const getDaysUntil = (dateString: string): number => {
-  const eventDate = new Date(dateString);
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const diffTime = eventDate.getTime() - today.getTime();
-  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  const event = parseEventDate(dateString);
+  const today = getMalaysiaDateComponents();
+  
+  const eventTimestamp = getDateTimestamp(event.year, event.month, event.day);
+  const todayTimestamp = getDateTimestamp(today.year, today.month, today.day);
+  
+  return Math.ceil((eventTimestamp - todayTimestamp) / (1000 * 60 * 60 * 24));
 };
